@@ -1,0 +1,253 @@
+@import "../css/_settings.scss";
+
+main{
+	p{
+		line-height: 1.6;
+		margin-top: 0.7rem;
+	}
+	figure{
+		margin-top: 0.7rem;
+	}
+	dl{
+		margin-top: 1rem;
+	}
+}
+.lpBox{
+	border:2px solid #FFF;
+	transition: 0.2s;
+	background: #FFF;
+	padding:20px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.05);
+	//border:1px solid rgba(0,0,0,0.1);
+	figure{
+		//margin-top: 0;
+	}
+	&.current{
+		border:2px solid $accent;
+	}
+}
+
+figcaption{
+	text-align: center;
+	margin-top: 0.5rem;
+	font-size: 85%;
+}
+
+.stepNumber{
+	background: $accent;
+	color: #FFF;
+	font-size: 75%;
+	padding:0.3rem 0.8rem;
+	border-radius: 3px;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+.welcome-content__sub-title2{
+	text-align: center;
+	line-height: 1.4;
+	margin-top: 2rem;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+
+.intro_title{
+	//text-align: center;
+	line-height: 1.4;
+	//margin-top: 2rem;
+	font-size: 2.2rem;
+	font-weight: bold;
+}
+
+
+.meritBox{
+	box-shadow: 0 0 5px rgba(0,0,0,0.05);
+	border-radius: 5px;
+	background: #FFF;
+	&_title{
+		border-radius: 5px 5px 0 0;
+		font-weight: bold;
+		text-align: center;
+		padding:1rem;
+		background: $accent;
+		color: #FFF;
+		font-size: 1.5rem;
+	}
+	&_inner{
+		padding:1rem;
+	}
+}
+
+.bigheadline{
+	margin-bottom: 3rem;
+	position:relative;
+	background: $accent;
+	color: #FFF;
+	text-align: center;
+	font-size: 2rem;
+	padding:1.5rem;
+	font-weight: bold;
+	&:after{
+		left: 50%;
+		margin-left: -10px;
+		position: absolute;
+		bottom:-15px;
+		font-size: 20px;
+		line-height: 1;
+		content: "▼";
+		color:$accent;
+	}
+}
+
+.melitList{
+	li{
+		a{
+			color: #000;
+			border-radius: 5px;
+			border:2px solid $accent;
+			box-shadow: 0 0 5px rgba(0,0,0,0.1);
+			font-weight: bold;
+			text-decoration: none;
+			display: block;
+			text-align: center;
+			font-size: 2rem;
+			padding:0 0.2rem 2rem;
+			background: #FFF;
+			@media #{$md-max} {
+				font-size: 1.6rem;
+			}
+		}
+		small{
+			margin-top: 0.2rem;
+			letter-spacing: 1px;
+			display: block;
+			color: $accent;
+			font-size:50%;
+		}
+		strong{
+			display: block;
+		}
+	}
+	span{
+		position: relative;
+		top: -1rem;
+		border-radius: 3px;
+		font-size: 70%;
+		padding:0.5rem 0.8rem;
+		line-height: 1;
+		display: inline-block;
+		background: $accent;
+		color: #FFF;
+
+	}
+}
+
+.campaign_band{
+	background: #E50020;
+	color: #FFF;
+	text-align: center;
+	font-weight: bold;
+	padding:0.5rem;
+	line-height: 1.2;
+	font-size: 1.2rem;
+}
+
+.lpKeyvisual{
+	position: relative;
+	background: url(images/kb_bg.jpg) no-repeat center center;
+	background-size: cover;
+	&:before{
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.1);
+	}
+	&_title{
+		text-shadow: 0 0 10px rgba(0,0,0,0.5),0 0 10px rgba(0,0,0,0.5);
+		color: #FFF;
+		line-height: 1.4;
+		font-size: 2rem;
+		font-weight: bold;
+		strong{
+			line-height: 1.2;
+			font-size: 4rem;
+		}
+		@media #{$lg-max} {
+			font-size: 1.6rem;
+			strong{
+				font-size: 2.8rem;
+			}
+		}
+	}
+	&_subtitle{
+		text-shadow: 0 0 10px rgba(0,0,0,0.5),0 0 10px rgba(0,0,0,0.5);
+		color: #FFF;
+		font-size: 1.4rem;
+		font-weight: bold;
+	}
+	.container{
+		position: relative;
+		z-index: 1;
+		padding-top: 2rem;
+		padding-bottom: 5rem;
+		background: url(images/ojisan.png) no-repeat right bottom;
+		background-size: 45% auto;
+		@media #{$lg-max} {
+			background-size: 70% auto;
+			background-position: right -20% bottom 0;
+			padding-top: 1rem;
+			padding-bottom: 3rem;
+		}
+	}
+}
+
+.is-colored-yellow{
+	background:#fff1d4;	
+}
+
+.underline{
+background: linear-gradient(transparent 80%, $accent 80%);
+}
+
+.a-button.solid{
+	box-shadow: 1px 1px 3px rgba(#000,0.5);
+	border-radius: 1000px;
+	border-right: 2px solid darken($accent,10%) !important;
+	border-bottom: 2px solid darken($accent,10%) !important;
+	border-top: 2px solid lighten($accent,30%) !important;
+	border-left: 2px solid lighten($accent,30%) !important;
+}
+
+.flowlist .lpBox +.lpBox{
+	position: relative;
+	&:before{
+		top: -2.5rem;
+		left:50%;
+		font-size: 30px;
+		margin-left: -15px;
+		position: absolute;
+		color: $accent;
+		content: "\f103";
+		font-family: "Font Awesome 5 Free";
+		font-weight: bold;
+	}
+}
+
+.welcome-content__inner.big{
+	padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+
+#selecttype_submit{
+	opacity: 0.4;
+	pointer-events: none;
+	&.oklink{
+		pointer-events: auto;
+	}
+	&.oklink{
+		pointer-events: auto;
+	}
+}

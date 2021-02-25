@@ -1,0 +1,502 @@
+@charset "utf-8";
+
+/*  responsive　start */
+@media(min-width:800px){
+  img#main_img_sp {
+    display: none;
+  }
+}
+
+@media(max-width:800px) {
+
+  /* header start */
+  img#logo {
+    margin-left: 5rem;
+  }
+
+  p#operation {
+    margin-right: 5rem;
+  }
+  /* header end */
+
+  /* main image start */
+  img#main_img_pc {
+    display: none;
+  }
+
+  img#main_img_sp {
+    width: 100%;
+  }
+  /* main image end */
+
+  div.wrap {
+    width: 65rem;
+  }
+
+  /* フロー図_pc　start*/
+  div#flow_graphics_arrows {
+    width: 65rem;
+  }
+
+  img.img_graphic {
+    width: 11.8rem;
+    height: 16.9rem;
+    margin-left: -1rem;
+  }
+
+  li.flow_graphic:first-child {
+    margin-left: 1rem;
+  }
+
+  ul#flow_arrows {
+    width: 40.5rem;
+  }
+
+  li.flow_arrow {
+    margin-left: 12.5rem;
+  }
+
+  img.img_arrow_red {
+    width: 0.75rem;
+    height: 1.5rem;
+  }
+  /* フロー図_pc　end*/
+
+  /* 説明　start */
+  div.explain_title_contents {
+    width: 59rem;
+  }
+
+  img.explain_step {
+    height: 2.3rem;
+  }
+
+  h3.explain_title_content {
+    font-size: 2.3rem;
+    margin-left: 1rem;
+  }
+
+  p.explain_sentence {
+    width: 46.5rem;
+  }
+
+  img.explain_sentence {
+    width: 8.5rem;
+    height: 7.5rem;
+    float: right;
+    margin-right: 2rem;
+  }
+  /* 説明　end */
+
+  /* 安心保証パック　start */
+  div.guarantee {
+    margin-left: 1rem;
+  }
+
+  div.guarantee_title {
+    width: 20.6rem;
+  }
+
+  div.guarantee_contents {
+    width: 20.6rem;
+ }
+
+  img.guarantee_img {
+    width: 15rem;
+  }
+/* 安心保証パック　end */
+}
+
+@media(min-width:751px){
+  .sp {
+    display: none;
+  }
+}
+
+@media(max-width:750px){
+  .pc {
+    display: none;
+  }
+
+  div.wrap {
+    width: 65%;
+    padding: 6.5rem 0 6.5rem 0;
+  }
+
+  /*  フロー図_sp　start */
+  div.flow_graphics_arrows_sp {
+    background-color: #ffffff;
+    width: 100%;
+    height: 4.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem #00000029;
+  }
+
+  div#flow_graphics_arrows_sp {
+    margin-top: 6.5rem;
+  }
+
+  img.img_arrow_red_sp {
+    margin: 1rem 0;
+  }
+
+  div.flow_graphics_arrows_sp:hover {
+    box-shadow: 0 0 0.8rem #e50020;
+  }
+
+  div.flow_contents {
+    float: left;
+  }
+
+  div.flow_content {
+    float: left;
+  }
+
+  div.flow_step  {
+    height: 4.5rem;
+    background-color: #e50020;
+    border-radius: 0.5rem 0 0 0.5rem;
+    padding: 0 2.5rem;
+  }
+
+  div.flow_step p {
+    color: #ffffff;
+    line-height: 4.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.125rem;
+  }
+
+  .flow_text_content {
+    float: left;
+    line-height: 4.5rem;
+  }
+
+  img.flow_text_content {
+    height: 3.3rem;
+    margin: 0.6rem 1rem 0 1rem;
+    vertical-align: bottom;
+  }
+
+  img#chat_sp {
+    height: 3rem;
+  }
+
+  p.flow_text_content {
+    color: #1c1c1c;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+  }
+  /*  フロー図_sp　end */
+
+  /*  説明_sp　start */
+  div.explain_sp {
+    width: 100%;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 1rem;
+  }
+
+  div#explain_sp_one {
+    margin-top: 6.5rem;
+  }
+
+  div.explain_sp_contents {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 0.15rem solid #BCBCBC;
+    padding-bottom: 1rem;
+    float: left;
+  }
+
+  img.explain_sp_step_img {
+    height: 2rem;
+    float: left;
+  }
+
+  h3.explain_sp_title {
+    font-size: 2rem;
+    color: #1c1c1c;
+    letter-spacing: 0.1rem;
+    margin-top: 0.5rem;
+    text-align: left;
+    float: left;
+  }
+
+  img.explain_sp_img {
+    height: 15rem;
+    margin: 3rem 0 3rem 0;
+  }
+
+  img#explain_chat_sp {
+    width: 15rem;
+  }
+
+  p.explain_sp_text {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #1c1c1c;
+    float: left;
+    text-align: left;
+    line-height: 3rem;
+  }
+
+  p.explain_sp_text span {
+    font-size: 1.1rem;
+  }
+
+  img.arrow_gary {
+    margin: 2rem 0;
+  }
+  /*  説明_sp　end */
+
+
+
+  /*  安心保証パック　start */
+  div.guarantee {
+    float: none;
+    margin-left: 0;
+    margin-top: 1.75rem;
+  }
+
+  div.guarantee_title {
+    width: 100%;
+  }
+
+  div.guarantee_contents {
+    width: 100%;
+  }
+
+  img.guarantee_img {
+    width: 25rem;
+  }
+
+  p.explain_sentence {
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: #1c1c1c;
+      line-height: 3rem;
+  }
+
+  p.explain_sentence span {
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  p.button_content {
+    font-size: 1.8rem;
+  }
+
+  img.button_content {
+    height: 1.8rem;
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  /*  安心保証パック　end */
+
+  /*  footer　start */
+  li.footer_content {
+    margin-left: 1.5rem;
+  }
+
+  li.footer_content:first-child {
+    float: none;
+    margin-bottom: 1rem;
+  }
+  /*  footer　end */
+}
+
+@media(max-width:700px){
+  div.wrap {
+    width: 70%;
+  }
+}
+
+@media(max-width:650px){
+  div.wrap {
+    width: 75%;
+  }
+}
+
+@media(max-width:600px){
+  img#logo {
+    margin-left: 2rem;
+    width: 14rem;
+  }
+
+  p#operation {
+    margin-right: 2rem;
+    font-size: 1rem;
+  }
+
+  div.wrap {
+    width: 85%;
+  }
+}
+
+@media(max-width:550px){
+
+  div.wrap {
+    padding: 4rem 0 4rem 0;
+  }
+
+  div#flow_graphics_arrows_sp {
+    margin-top: 4rem;
+  }
+
+  div.flow_step  {
+    padding: 0 1.5rem;
+  }
+
+  p.flow_text_content {
+    font-size: 1.5rem;
+  }
+
+  div#explain_sp_one {
+    margin-top: 4rem;
+  }
+
+  img.arrow_gary {
+    height: 2rem;
+    width: 8rem;
+    margin: 1rem 0;
+  }
+
+  button {
+    margin-top: 4rem;
+  }
+}
+
+@media(max-width:500px) {
+  p.footer_word {
+    font-size: 1.2rem;
+  }
+
+  button {
+    padding: 2rem 0 2rem 0;
+  }
+}
+
+@media(max-width:450px) {
+    p.button_content {
+      font-size: 1.6rem;
+  }
+    img.button_content {
+    margin-left: 1rem;
+    margin-top: 0.25rem;
+  }
+
+  img.flow_text_content {
+    margin: 0.6rem 0.5rem 0 0.5rem;
+  }
+}
+
+@media(max-width:400px) {
+  img#logo {
+      margin-left: 2rem;
+      width: 12rem;
+    }
+
+    h1#main_copy {
+      font-size: 3rem;
+    }
+
+    div.flow_step  {
+      padding: 0 1rem;
+    }
+
+    p.flow_text_content {
+      font-size: 1.4rem;
+    }
+
+    p.button_content {
+      font-size: 1.4rem;
+  }
+
+    img.button_content {
+    margin-left: 1rem;
+    margin-top: 0.05rem;
+  }
+
+  li.footer_content {
+    margin-left: 1rem;
+  }
+
+  li.footer_content {
+    margin-bottom: 1rem;
+  }
+
+  li.footer_content:last-child {
+    float: none;
+    margin-bottom: 0;
+  }
+
+}
+
+@media(max-width:349px) {
+
+  div.flow_step  {
+    padding: 0 0.5rem;
+  }
+
+  div.flow_step p {
+    font-size: 1.3rem;
+    letter-spacing: 0;
+  }
+
+  img.button_content {
+   height: 1.3rem;
+   margin-top: 0.3rem;
+   margin-left: 0.5rem;
+ }
+
+}
+
+@media(max-width:320px) {
+  h2.title {
+    font-size: 2rem;
+  }
+}
+
+@media(max-width:315px) {
+  h1#main_copy {
+    font-size: 2.8rem;
+  }
+
+  img.flow_text_content {
+    display: none;
+  }
+
+  div.flow_step  {
+    padding: 0 0.8rem;
+  }
+
+  p.flow_text_content {
+    margin-left: 0.8rem;
+  }
+
+  p.button_content {
+    font-size: 1.2rem;
+  }
+
+    img.button_content {
+    margin-left: 0.5rem;
+    margin-top: 0.24rem;
+  }
+
+  li.footer_content {
+    margin-bottom: 1rem;
+  }
+
+  li.footer_content:last-child {
+    margin-bottom: 0;
+    float: none;
+  }
+
+}
