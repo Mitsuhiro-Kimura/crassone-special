@@ -1,0 +1,366 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #222222;
+    font-size: 14px;
+}
+a{
+    color: #707070;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.pc{
+    display: block;
+}
+.sp{
+    display: none;
+}
+.relative{
+    position: relative;
+}
+/* max-width: 414px -> max-width: 812px に変更 */
+@media screen and ( max-width: 812px ){
+    .pc{
+        display: none;
+    }
+    .sp{
+        display: block;
+    }
+}
+/* メインコンテンツ */
+.w80{
+    width: 80%;
+}
+.w90{
+    width: 90%;
+}
+.w95{
+    width: 95%;
+}
+.main_ttl{
+    border-top: 6px solid #333;
+    border-bottom: 3px solid #333;
+    padding: 16px 0;
+    font-size: 35px;
+    font-weight: 600;
+}
+.sub_ttl{
+    /* padding: 16px 0 8px;
+    font-size: 28px;
+    font-weight: 600; */
+    font-size: 28px;
+    font-weight: 600;
+    background: #dc8c19;
+    color: #fff;
+    padding: 8px 16px;
+}
+p{
+    line-height: 2.5;
+    font-size: 18px;
+    letter-spacing: 1px;
+    letter-spacing: 0px;
+}
+p strong{
+    font-weight: 600;
+    font-size: 130%;
+}
+p small{
+    font-size: 90%;
+}
+.bold{font-weight: 600;}
+.img_area{
+    padding: 12px 0;
+}
+.list_area{
+    background: #fafafa;
+    padding: 16px;
+}
+.list_area ul{
+    padding-left: 32px;
+}
+.list_area li{
+    list-style: disc;
+}
+span.marker,
+strong.marker {
+    background:linear-gradient(transparent 60%, #ff6 60%);
+    font-weight: 600;
+}
+
+
+.suggestion-content__nav {
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+.suggestion-content__nav-items {
+    display: flex;
+    margin-left: -1.5%;
+    margin-right:-1.5%;
+    margin-bottom: -3%;
+    flex-wrap: wrap;
+
+}
+
+.suggestion-content__nav-item {
+    flex: 0 0 auto;
+    width: 33.3%;
+}
+
+
+.suggestion-content__nav-item {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    margin-bottom: 3%;
+}
+.form_area_waku{
+    border: 10px solid #d71524;
+    width: 100%;
+    padding: 5%;
+    height: auto;
+}
+.form_area_waku label div img{
+    width: 80px;
+}
+.form_area_waku label{
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+.form_area_waku .form-group{
+    margin-bottom: 2rem;
+}
+.form-check-input{
+    margin-top: .5rem;
+}
+.big-text{
+    font-size: 28px;
+    text-align: center;
+}
+.last-contents label{
+    font-size: 20px;
+}
+.last-contents input{
+    width: 100%;
+    border: 1px solid #d71524;
+    padding: 12px;
+}
+.last-contents > div{
+    margin-bottom: 2rem;
+}
+.last-contents button, [type="submit"]{
+    border: none;
+    background: none;
+}
+.last-text{
+    color: #d71524;
+    text-decoration: underline;
+    line-height: 1.5;
+}
+.last-contents{
+    margin-bottom: 6rem;
+}
+
+
+@media only screen and (max-width: 750px) {
+.suggestion-content__nav-item {
+    flex: 0 0 auto;
+    width: 50%;
+}
+}
+
+.suggestion-content__nav-item {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    margin-bottom: 3%;
+}
+
+.suggestion-content__nav-item-link {
+    height: auto;
+    min-height: 140px;
+    width: 100%;
+    padding: .75rem;
+    background-color: #ffffff;
+    border: solid 1px #dcdcde;
+    border-radius: .25rem;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-out;
+}
+
+.suggestion-content__nav-item-link img{
+max-width:50%;
+flex-shrink: 0;
+}
+
+.suggestion-content__nav-item-label {
+    font-size: 1.0625rem;
+    font-weight:normal;
+    line-height: 1.4;
+    text-align: center;
+    color: #404042;
+    margin-bottom: .5em;
+    width:100%;
+}
+.app-sect__ttl:before {
+    content: 'Q.';
+    position: absolute;
+    left: 0;
+    line-height: 1.4;
+}
+.app-sect__ttl:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -.625rem;
+    height: 5px;
+    background: #e0001a;
+    width: 70px;
+}
+.app-sect__ttl {
+    font-size: 1.0625rem;
+    padding-left: 1.5em;
+    display: table;
+    margin: 0 auto 2.5rem;
+    position: relative;
+    font-weight: bold;
+    text-align: left;
+}
+.home-last-action__action {
+    display: flex;
+    justify-content: center;
+}
+.home-last-action__action .a-button {
+    max-width: 29rem;
+}
+.a-button.is-xl {
+    font-size: 1.5rem;
+    padding-left: 1.125em;
+    padding-right: 1.125em;
+    min-height: 2.85em;
+}
+.a-button.has-right-icon i {
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.a-button.is-danger, .a-button.is-delete, .a-button.is-accent {
+    background-color: #E50020;
+    color: #ffffff;
+    border-color: #E50020;
+}
+.fa, .fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+.last_messe{
+    border: 3px solid #d32d2d;
+    width: 90%;
+    margin: 0 auto;
+    color: #d32d2d;
+    font-weight: 600;
+    margin-bottom: 3%;
+    background: #fff;
+    font-size: 130%;
+}
+.font-bold{
+    font-weight: 700;
+}
+@media screen and (min-width: 768px){
+    .app-sect__ttl {
+        font-size: 1.5rem;
+        margin: 0 auto 3.125rem;
+    }
+}
+/* メインコンテンツ */
+/* max-width: 414px -> max-width: 812px に一部コンテンツを移動 */
+@media screen and ( max-width: 414px ){
+    .conteiner{
+        padding: 5%;
+    }
+    .main_ttl{
+        font-size: 25px;
+    }
+    .sub_ttl{
+        font-size: 22px;
+    }
+    p {
+        line-height: 2;
+        font-size: 16px;
+    }
+    p small {
+        font-size: 80%;
+    }
+    .list_area ul {
+        padding-left: 20px;
+    }
+    .w80,
+    .w90,
+    .w95{
+        width: 95%;
+    }
+}
+/* max-width: 414px -> max-width: 812px に変更 */
+@media screen and ( max-width: 812px ){
+}
+
